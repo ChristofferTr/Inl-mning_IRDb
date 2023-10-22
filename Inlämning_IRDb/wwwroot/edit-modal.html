@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Movie</title>
+</head>
+<body>
+    <h2>Edit Movie</h2>
+    <form id="edit-movie-form-modal">
+        <input type="text" id="edit-title" placeholder="Title">
+        <input type="text" id="edit-director" placeholder="Director">
+        <input type="number" id="edit-year" placeholder="Year">
+        <input type="text" id="edit-genre" placeholder="Genre">
+        <input type="number" id="edit-duration" placeholder="Duration">
+        <input type="number" id="edit-rating" step="0.1" placeholder="Rating">
+        <input type="text" id="edit-imageUrl" placeholder="Image URL">
+        <button type="submit" class="save-button">Save</button>
+    </form>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const movieId = urlParams.get('movieId');
+        window.movieId = movieId;
+    </script>
+</body>
+</html>

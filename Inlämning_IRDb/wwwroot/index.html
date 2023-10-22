@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" />
+    <title>Movie Database</title>
+</head>
+<body>
+    <h1>Movie Database</h1>
+    <div id="movies-list">
+        <!-- All movies shown here -->
+
+    </div>
+    <button id="edit-button">Edit</button>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Edit Movie</h2>
+            <form id="edit-movie-form-modal" method="POST">
+                <input type="text" id="edit-title" placeholder="Title">
+                <input type="text" id="edit-director" placeholder="Director">
+                <input type="number" id="edit-year" placeholder="Year">
+                <input type="text" id="edit-genre" placeholder="Genre">
+                <input type="number" id="edit-duration" placeholder="Duration">
+                <input type="number" id="edit-rating" step="0.1" placeholder="Rating">
+                <input type="text" id="edit-imageUrl" placeholder="Image URL">
+                <button type="submit" class="save-button">Save</button>
+            </form>
+        </div>
+    </div>
+
+    <h2>Add a movie</h2>
+    <form id="add-movie-form" class="add-movie-input">
+        <input type="text" id="title" placeholder="Title" required>
+        <input type="text" id="director" placeholder="Director" required>
+        <input type="number" id="year" placeholder="Year" required>
+        <input type="text" id="genre" placeholder="Genre" required>
+        <input type="number" id="duration" placeholder="Duration" required>
+        <input type="number" id="rating" step="0.1" placeholder="Rating" required>
+        <input type="text" id="imageUrl" placeholder="Image URL" required>
+        <button type="submit">Add Movie</button>
+    </form>
+    <img src="images/BONUS.jpg" alt="Bonus" class="logo" />
+    <script src="script.js"></script>
+</body>
+</html>
