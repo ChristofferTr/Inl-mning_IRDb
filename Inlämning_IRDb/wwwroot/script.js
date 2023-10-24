@@ -152,7 +152,7 @@ document.getElementById('edit-movie-form-modal').addEventListener('submit', func
     })
         .then(response => {
             if (response.ok) {
-                return response.json(); //(Jag lyckades ej lösa ett error för att läsa denna, dock fungerar min "PUT" request)
+                return response.json(); //response.json(); ska tas bort
             } else {
                 throw new Error('Failed to edit the movie.');
             }
